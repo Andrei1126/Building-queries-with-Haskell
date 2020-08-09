@@ -1,0 +1,33 @@
+Micut Andrei-Ion
+Grupa 321CB
+
+												~Building queries with Haskell~
+
+
+Am debutat implementarea acestei teme prin realizarea functiei splitOn ce imi va face split pe linii in functie de caracterul '-' pentru obtinerea unei liste. 
+
+In functie read_table am realizat citirea propriu-zisa a table-ului, unde am aplica splitOn pe rand si imi va genera o lista cu randurile nedespartite asupra careia voi aplica functia map si imi va da o matrice (o lista de liste). 
+
+Pentru a realiza afisarea table-ului a trebuit sa verific pentru fiecare linie maximul pentru fiecare coloana. 
+
+Apoi am bordat table-ul cu liniute pe care le-am numarat astfel: am adunat maximul pentru fiecare linie de pe fiecare coloana + 1. Functiile showHeader si showEntries ma vor ajuta in functia show sa afisez header-ul si entry-urile tabelei. 
+
+In continuare, am realizat functia nr_column, ce imi va spune pe a cata se afla elementul cautat. 
+
+Functiile func_head si func_entries imi vor spune cine este header-ul si care sunt entry-urile table-ului. 
+
+Functia find_column imi va cauta o anumita coloana din header in table. 
+
+Append_tables imi va concatena 2 table-uri si imi va rezulta alt table. 
+
+Functia care imi va cauta elementul de pe pozitia x din entry este find_e. 
+
+Functiile func_table_eq, func_table_lt, func_table_in, imi vor cauta pozitia pe care se afla coloana data ca parametru (field-ul) si apoi verific daca coloana din entry indeplineste conditiile necesare pentru fiecare functie in parte. 
+
+Functiile not_func_table_lt, not_func_table_eq, not_func_table_in, imi vor nega functiile de mai sus. 
+
+Am realizat functia de evaluare pentru fiecare Query in parte cu ajutorul functiilor prezentate mai sus.
+
+Functiile same_zone, male_within_age si mixed au fost implementate precum a fost precizat in cerinta temei.
+
+Functia zone_func este o functie auxiliara unde voi lua linia pe care se afla user_id-ul si voi extrage doar zona sa pentru a o folosi in functia same_zone.
